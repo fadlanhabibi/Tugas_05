@@ -13,6 +13,11 @@ class Pemesanan {
     }
 
     public void cetakNota() {
-        // Do your magic here
+        System.out.println("-- Nota Pemesanan ---");
+        System.out.println("Nama Pembeli : " + nama);
+        System.out.println("Tahap Pembelian : " + tahap);
+        System.out.println("Jenis Tiket : " + tiket.getClass().getSimpleName());
+        System.out.println("Jumlah Tiket : " + jumlah);
+        System.out.println("Total Harga: Rp." + (tiket.getHarga(tahap) * jumlah));
     }
 }
